@@ -1,42 +1,41 @@
-# sv
+# SvelteKit Playground
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+Repo d’apprentissage pour découvrir et pratiquer **Svelte / SvelteKit**.
 
-## Creating a project
+L’objectif est de monter en compétence progressivement en travaillant sur des exercices concrets proches de situations réelles en entreprise.
 
-If you're seeing this, you've probably already done this step. Congrats!
+---
 
-```sh
-# create a new project
-npx sv create my-app
-```
+## 🎯 Objectifs
 
-To recreate this project with the same configuration:
+- Comprendre la réactivité de Svelte
+- Manipuler les bindings
+- Gérer des états simples et conditionnels
+- Découvrir la structure et les bases de SvelteKit
+- Adopter de bonnes pratiques (structure, commits, lisibilité)
 
-```sh
-# recreate this project
-pnpm dlx sv create --template minimal --types ts --install pnpm .
-```
+---
 
-## Developing
+## 🧪 Contenu
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+- Exercices de base (state, events, conditions)
+- Mini fonctionnalités (compteur, formulaire, toggle, etc.)
+- Progression incrémentale (un exercice = un commit)
 
-```sh
-npm run dev
+Ce repo sert de **laboratoire**, pas de projet final.
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
+---
 
-## Building
+## 🛠️ Stack
 
-To create a production version of your app:
+- SvelteKit
+- TypeScript
+- pnpm
 
-```sh
-npm run build
-```
+---
 
-You can preview the production build with `npm run preview`.
+## ▶️ Lancer le projet
 
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+```bash
+pnpm install
+pnpm run dev
