@@ -29,6 +29,16 @@
     const showClickV2 = () => {
         showV2 = !showV2
     }
+
+    let todos = []
+    let newTodo = ""
+
+    const addTodo = () => {
+        const value = newTodo
+        todos = [...todos, value]
+        newTodo = ""
+    }
+
 </script>
 
 <button on:click={click}>clique</button>
@@ -42,5 +52,14 @@
 <button on:click={showClickV2}>{showV2}</button>
 
 
+<p>todo :</p>
+
+<form on:submit|preventDefault={addTodo}>
+<input bind:value={newTodo}/>
+<button>Ajouter à la todo</button>
+</form>
 
 
+{#each todos as item}
+<li>Tâche :{item}</li>
+{/each}
